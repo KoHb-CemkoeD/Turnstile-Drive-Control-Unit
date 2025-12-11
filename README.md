@@ -1,13 +1,13 @@
 # Turnstile-Drive-Control-Unit Based on STM32F103C8T6
 A complete motor controller designed to drive a 12 V DC brushed motor for industrial-grade control, including electrical protection, noise filtering, and reliable communication through a differential interface
 
+Repository contains the hardware design of a DC motor controller for a turnstile application
+(based on STM32F103 and an H-bridge power stage). The focus is on the schematic, components
+selection, and interfaces.
+
 ## Description
 This project implements a DC brushed motor controller for a 12 V / 24 W motor with nominal current up to 4 A and speed up to 3000 rpm. 
 The controller is built around an STM32F103C8T6 microcontroller and a full H-bridge power stage with MOSFET drivers, current sensing, RS-485 communication, and external EEPROM for statistics logging.  
-
-This repository contains the hardware design of a DC motor controller for a turnstile application
-(based on STM32F103 and an H-bridge power stage). The focus is on the schematic, components
-selection, and interfaces.
 
 The controller is intended for use in industrial or automation systems where the motor may be started, stopped, reversed and speed-controlled via PWM and an RS-485 interface. Additional discrete inputs support an open-collector signal and a dry contact (e.g. limit switch).
 
